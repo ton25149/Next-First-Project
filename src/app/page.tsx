@@ -9,10 +9,10 @@ import about from "./abouts/page";
 export default function Home() {
   return (
     <main >
-      <Header />
+      
       <HomeContent />
-     
-      <Footer />
+      
+      
 
     </main>
    
