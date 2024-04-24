@@ -6,9 +6,9 @@ import { FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="fixed font-bold bottom-0  left-0 w-full z-10 ">
+    <footer className="fixed font-bold bottom-0  left-0 w-full z-10 bg-gray-500 bg-opacity-40">
       <div className="flex justify-between items-center max-w-[1240] m-auto p-4 ">
-      <a href="" className="text-white flex ml-10 hover:scale-125 duration-150">
+      <a href="" className="text-white flex ml-10">
         No Copyright
       </a>
       <ul className="flex p-4 space-x-4 mr-0 ">
