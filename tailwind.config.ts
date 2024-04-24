@@ -6,8 +6,6 @@ const config: Config = {
     "./src/Navbar/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/HomeContent/**/*.{js,ts,jsx,tsx,mdx}",
-  
-    
   ],
   theme: {
     extend: {
@@ -16,11 +14,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      
     },
     fontFamily: {
-      content :["Ubuntu", "sans-serif"],
+      content: ["Ubuntu", "sans-serif"],
     },
   },
+  variants: {},
   plugins: [],
 };
+
 export default config;
