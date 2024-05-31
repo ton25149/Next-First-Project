@@ -25,7 +25,7 @@ export default function HomeContent() {
             </p>
           </div>
 
-          <button className="px-8 py-4 bg-stone-400  mx-5 mb-10 shadow-2xl rounded-full hover:scale-110">
+          <button className="px-8 py-4 bg-stone-400  mx-5 mb-10 shadow-2xl rounded-full hover:scale-110 duration-150">
             Learn More
           </button>
         </div>
