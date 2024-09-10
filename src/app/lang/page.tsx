@@ -2,15 +2,14 @@
 
 import React from "react";
 
-export default function HomeContent() {
+export default function ThaiLang() {
   return (
-    
-<div>
-      <section className="scroll-smooth">
-        <div className="video-container "><video
+    <div>
+      <section className="">
+        <div className="video-container"><video
           src="https://videos.pexels.com/video-files/8820216/8820216-uhd_3840_2160_25fps.mp4"
           autoPlay loop
-          className="absolute-video hover:transform scale-100"
+          className="absolute-video"
         ></video>
 
         </div>
@@ -18,11 +17,8 @@ export default function HomeContent() {
         <div className="border-white bg-gray-500/20 shadow-2xl w-4/6 h-96 ">
           <div className="text-2xl font-mono text-white font-content text-start p-10">
             <h1 className="font-extrabold ">Content</h1>
-            <p className="flex justify-center text-lg ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              suscipit, nobis voluptas veritatis inventore at eos. Quidem neque
-              tenetur quisquam nemo facilis labore blanditiis, sed dolorem,
-              reprehenderit nulla quia a numquam!
+            <p className="flex justify-center text-lg">
+            ไฮเวย์ วีซ่าโมเดิร์น ซูชิลิมิตแป๋วเพนกวินโฮม สหัชญาณเรต มะกันเคลื่อนย้ายสปาไวอะกร้าฮองเฮา แอคทีฟจูน เปปเปอร์มินต์กับดักโฮปเดอะ มินต์ บ๊อกซ์ โดนัทดีกรี เซ็กซี่ฟลุทซานตาคลอสบึ้มบ๊อกซ์ อุปัทวเหตุวิภัชภาคสเตชั่นโกลด์ ไดเอ็ตวอลซ์ยาวีซ้อ คอร์รัปชันตุ๊กแม็กกาซีนคลับไคลแมกซ์ หมิงดัมพ์แฮมเบอร์เกอร์ คำสาปคอลัมนิสต์มุมมองสังโฆแรลลี
             </p>
 
             <h1 className="font-extrabold">Content</h1>
@@ -72,9 +68,7 @@ export default function HomeContent() {
         </div>
       </div>
       </section>
-      </div>
-    
-    
+    </div>
   
   );
 }
