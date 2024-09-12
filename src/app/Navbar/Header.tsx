@@ -46,10 +46,15 @@ function Header() {
         <ul
           id="dropdownButton"
           className=" text-white mr-5 text-xl"
-          onClick={() => {
-            const dropdown = document.getElementById("dropdown");
-            dropdown.classList.toggle("hidden");
-          }}
+
+onClick={() => {
+            
+  const dropdown = document.getElementById("menu-dropdown");//+
+  if (dropdown) {
+    dropdown.classList.toggle("hidden");
+  }
+}}
+
         >
           <div className="flex m-auto space-x-2 rounded-lg p-2 cursor-pointer">
             <GrLanguage />
@@ -57,7 +62,7 @@ function Header() {
             <IoMdArrowDropdown />
 
             <div
-              id="dropdown"
+              id="menu-dropdown"
               className="bg-white absolute text-black top-14 w-16 text-center border-spacing-1 right-10 text-base hidden"
             >
               <div className="hover:bg-gray-300 duration-150">
