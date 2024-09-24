@@ -22,15 +22,44 @@ html {
 }
 
 .custom-img {
-    background-image: url('https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    margin-top: 1cm;
+    width: screen-width;
+    background-image: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     
     
 }
 .custom-img2 {
-    background-image: url('https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://line.me/static/a8a76dfcb3634c0cc8ab318411a5ed6d/03979/2dfcd6684c8f541e18d888149e53bfae.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 20%;
+}
+
+
+.custom-img3 {
+    background-image:url('https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/650c0406ebc263099fd19bf2_What%20is%20Discord.png') ;
+  background-repeat: no-repeat;
+   background-size: 40%;
+   background-position: 80%;
+    
+}
+.custom-img4 {
+    background-image:url(/src/app/logos/linesticker.png) ;
+    background-repeat: no-repeat;
+   background-size: 100%;
+   z-index: -1;
+   
+    
+}
+.line-img {
+    
+   background-position: 80%;
+    
 }
 .video-container {
+    height: 1000px;
     position: absolute;
+    animation-play-state: running;
     width: 100%;
     height: 100%;
     z-index: -1;

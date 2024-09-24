@@ -7,11 +7,11 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 function Header() {
   return (
-    <nav className="fixed font-bold top-0 w-full z-10 text-xl bg-gray-500 shadow-lg bg-opacity-40">
+    <nav className="fixed font-bold top-0 w-full z-10 text-xl shadow-lg bg-white">
       <div className="flex items-center max-w-[1240] p-4 ">
         <Link
           href="/"
-          className="text-white rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-white focus:outline-none active:bg-gray-400 ml-20 hover:scale-125 duration-150"
+          className="text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-gray-400 ml-20 hover:scale-125 duration-150"
         >
           Home
         </Link>
@@ -19,25 +19,25 @@ function Header() {
         <ul className="flex space-x-8  text-xl bg-opacity-95 m-auto">
           <Link
             href="/abouts"
-            className=" text-white rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-white focus:outline-none active:bg-stone-300 duration-150 hover:scale-125"
+            className=" text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-stone-300 duration-150 hover:scale-125"
           >
             About
           </Link>
           <Link
             href="/"
-            className=" text-white rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-white focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
+            className=" text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
           >
             Services
           </Link>
           <Link
             href="/"
-            className="text-white rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-white focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
+            className="text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
           >
             Contact
           </Link>
           <Link
-            href="/"
-            className="text-white rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-white focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
+            href="/signin"
+            className="text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
           >
             Sign in
           </Link>
@@ -45,7 +45,7 @@ function Header() {
 
         <ul
           id="dropdownButton"
-          className=" text-white mr-5 text-xl"
+          className=" text-black mr-5 text-xl"
 
 onClick={() => {
             
