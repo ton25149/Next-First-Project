@@ -11,33 +11,33 @@ function Header() {
       <div className="flex items-center max-w-[1240] p-4 ">
         <Link
           href="/"
-          className="text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-gray-400 ml-20 hover:scale-125 duration-150"
+          className="text-black rounded-lg p-2 hover:shadow-2xl focus:underline active:bg-gray-400 ml-20 hover:scale-125 duration-150"
         >
           Home
         </Link>
 
         <ul className="flex space-x-8  text-xl bg-opacity-95 m-auto">
           <Link
-            href="/abouts"
-            className=" text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-stone-300 duration-150 hover:scale-125"
-          >
-            About
-          </Link>
-          <Link
-            href="/"
-            className=" text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
+            href="/services"
+            className=" text-black rounded-lg p-2 hover:shadow-2xl  focus:underline active:bg-stone-300 duration-150 hover:scale-125"
           >
             Services
           </Link>
           <Link
-            href="/"
-            className="text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
+            href="/abouts"
+            className=" text-black rounded-lg p-2 hover:shadow-2xl  focus:underline focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
+          >
+            Abouts
+          </Link>
+          <Link
+            href="/abouts"
+            className="text-black rounded-lg p-2 hover:shadow-2xl focus:underline active:bg-stone-300 hover:scale-125 duration-150"
           >
             Contact
           </Link>
           <Link
             href="/signin"
-            className="text-black rounded-lg p-2 hover:shadow-2xl focus:ring focus:ring-black focus:outline-none active:bg-stone-300 hover:scale-125 duration-150"
+            className="text-black rounded-lg p-2 hover:shadow-2xl focus:underline active:bg-stone-300 hover:scale-125 duration-150"
           >
             Sign in
           </Link>

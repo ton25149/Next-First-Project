@@ -14,16 +14,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      
-    },
-    fontFamily: {
-      content: ["Ubuntu", "sans-serif"],
+      fontFamily: {
+        content: ["Ubuntu", "sans-serif"],
+      },
+      colors: {
+        'custom-blue': "#06b6d4",
+        'custom-blue2': '#0084E6A1',
+        'custom-red': "#D72400DA",
+        'custom-grey': "#868E8B",
+      },
     },
   },
   variants: {},
   plugins: [],
 };
-
-
 
 export default config;

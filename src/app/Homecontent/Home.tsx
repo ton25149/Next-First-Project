@@ -18,7 +18,7 @@ export default function HomeContent() {
         </div>
       <div className="justify-center items-center w-full py-60 gap-5 px-5 flex relative overflow-hidden">
         <div className="border-white bg-gray-500/20 shadow-2xl w-4/6 h-auto ">
-          <div className="text-2xl font-mono text-white font-content text-start p-8">
+          <div className="text-2xl  text-white font-content text-start p-8">
             <h1 className="font-extrabold ">Content</h1>
             <p className="flex justify-center text-lg ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -52,7 +52,7 @@ export default function HomeContent() {
         
         <div className="pl-[350px]  w-full py-40 gap-20 flex relative overflow-hidden">
           <div className="border-white bg-gray-400/20 shadow-2xl w-[500px] h-auto p-5">
-            <div className="text-2xl font-mono text-black font-content text-start p-10">
+            <div className="text-2xl  text-black font-content text-start p-10">
               <h1 className="font-extrabold">Content</h1>
               <p className="flex justify-center text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -79,7 +79,7 @@ export default function HomeContent() {
         <img src={logo2.src} alt="" className="line-img w-[400px] absolute ml-[1400px]" />
         <div className="justify-end pr-[280px] w-full py-40 gap-20 flex relative overflow-hidden">
           <div className="border-white bg-gray-400/20 shadow-2xl w-[500px] h-auto p-5">
-            <div className="text-2xl font-mono text-black font-content text-start p-10">
+            <div className="text-2xl  text-black font-content text-start p-10">
               <h1 className="font-extrabold">Content</h1>
               <p className="flex justify-center text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime

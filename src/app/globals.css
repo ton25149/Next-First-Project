@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
 
 @keyframes appear{
     from{
@@ -69,6 +73,21 @@ html {
   animation-timing-function: linear;
   
 
+}
+.userIcon{
+    position : relative ;
+    left : 45% ;
+    margin-bottom: 50px;
+}
+.signInButton {
+    left : 20% ;
+    position : relative ;
+}
+.textAbouts{
+    width : 50%;
+    
+  
+    
 }
 
 

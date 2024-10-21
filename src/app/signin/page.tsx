@@ -1,47 +1,60 @@
+"use client";
 import Link from "next/link";
+import { FaCircleUser } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function SignIn() {
   return (
-    <section className="flex justify-center items-center py-[76px] ">
-      <div className=" w-[1000px] h-[900px]">
+    <section className="flex justify-center left-[500px] py-[120px] mb-0 overflow-visible fixed">
+      <div className=" object-none h-auto w-96 mb-[450px]">
         <video
-          src="https://videos.pexels.com/video-files/3625774/3625774-sd_506_960_25fps.mp4"
+          src="https://videos.pexels.com/video-files/6115070/6115070-sd_506_960_25fps.mp4"
           autoPlay
           loop
-          className="absolute-video hover:transform scale-100"
+          className="absolute-video hover:transform scale-100 py-5 rounded-md "
         ></video>
       </div>
 
-      <div className="py-40 px-10 h-auto w-auto bg-gray-500/20 shadow-2xl border-white rounded-md flex-col  ">
-        <div className="space-y-5 items-center justify-center ">
-          <input
-            type="text"
-            placeholder="Username"
-            className="flex p-2 rounded-sm"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            className="flex p-2 rounded-sm"
-          />
-          <button type="submit" className="rounded-lg text-bold ring-1 p-2 flex hover:bg-blue-400  duration-150 px-20 ">
-            Sign In
-          </button>
+      <div className="py-[20px] ">
+        <div className="py-[60px] px-20 h-[730px] w-auto bg-gradient-to-r from-gray-500/20 shadow-2xl border-white rounded-md flex-col ">
+          <div className="space-y-[40px] items-center justify-center ">
+            <FaCircleUser className="userIcon text-[60px]" />
+            <input
+              type="text"
+              placeholder="Username"
+              className="flex px-10 py-3 rounded-sm text-[22px]"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              className="flex px-10 py-3 rounded-sm text-[22px]"
+            />
+            <button
+              type="submit"
+              className="signInButton rounded-lg text-bold ring-1 p-3  hover:bg-blue-400  duration-150 px-20 "
+            >
+              Sign In
+            </button>
 
+            <p className="text-bold text-black text-center ">or</p>
+          </div>
 
-          <p className="text-bold text-black text-center ">or</p>
+          <div className="flex items-center space-x-5 mt-[30px] justify-center ">
+            <Link href="/">
+              <FaFacebook className="text-[30px] hover:scale-125  duration-150" />
+            </Link>
+            <Link href="/">
+              <FaGoogle className="text-[30px] hover:scale-125 duration-150" />
+            </Link>
+            <Link href="/">
+              <FaXTwitter className="text-[30px] hover:scale-125 duration-150 " />
+            </Link>
 
-
-          <Link
-          href=""
-          className="text-black rounded-lg hover:underline  focus:outline-none active:bg-gray-400 hover:scale-125 duration-150 flex mx-[85px]"
-        >
-          Sign Up
-        </Link>
-
-        </div>
-        <div className="items-center pt-5 justify-center absolute">
-          
+            
+          </div>
+          <p className=" text-center pt-[50px]">Not a Member? <a href="/" className="text-custom-blue2">Register</a></p>
         </div>
       </div>
     </section>
