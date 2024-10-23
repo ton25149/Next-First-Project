@@ -21,7 +21,7 @@ export default function abouts(){
                     
 
                     <h1>Title</h1>
-                    Link
+                    <img src="" alt="" />
 
             </section>
 
