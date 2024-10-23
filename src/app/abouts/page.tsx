@@ -2,7 +2,7 @@
 
 export default function abouts(){
     return(
-        <section className="mt-10 relative items-center justify-center text-center ">
+        <section className="mt-10 relative items-center justify-center text-center z-2">
             <div className="space-y-5 ">
              <h1 className="text-[22px] text-custom-blue">About Us</h1>
                 <h2 className="text-bold text-[50px] text-custom-grey ">Lorem</h2>
@@ -13,15 +13,15 @@ export default function abouts(){
              
             
             </div>
-            <section className="mt-10 ">
+            <section className="mt-10 flex">
 
-                    <p> Photo </p>
                     
                     <p className="mx-auto justify-center items-center w-1/2 text-custom-blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus cupiditate placeat quis. Explicabo earum praesentium illum sunt repellat quod esse strum, numquam quidem asasdasd enim.</p>
                     
 
-                    <h1>Title</h1>
-                    <img src="" alt="" />
+                   
+                   
+                    <img src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg" alt="" className="all-img z-0 absolute" />
 
             </section>
 

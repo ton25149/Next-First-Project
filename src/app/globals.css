@@ -86,9 +86,15 @@ html {
 }
 .textAbouts{
     width : 50%;
-    
-  
-    
+}
+.all-img{
+    width: 40%;
+    z-index: -1;
+    height: 80%;
+    top: 120%;
+    left: 0%;
+    transform: translateY(-50%);
+   object-fit: cover;
 }
 
 
