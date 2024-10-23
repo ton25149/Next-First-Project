@@ -36,7 +36,7 @@ html {
     background-image: url('https://line.me/static/a8a76dfcb3634c0cc8ab318411a5ed6d/03979/2dfcd6684c8f541e18d888149e53bfae.png');
     background-repeat: no-repeat;
     background-size: 40%;
-    background-position: 20%;
+    background-position: 10%;
 }
 
 
@@ -44,7 +44,7 @@ html {
     background-image:url('https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/650c0406ebc263099fd19bf2_What%20is%20Discord.png') ;
   background-repeat: no-repeat;
    background-size: 40%;
-   background-position: 80%;
+   background-position: 90%;
     
 }
 .custom-img4 {
@@ -52,6 +52,7 @@ html {
     background-repeat: no-repeat;
    background-size: 100%;
    z-index: -1;
+   
    
     
 }

@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { MdOutlineGetApp } from "react-icons/md";
 import { BsArrowDownRightSquare } from "react-icons/bs";
@@ -33,8 +34,9 @@ desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum hivolupt
 
 function services() {
   return (
-    <div className="items-center justify-center bg-center h-screen bg-fixed relative object-cover py-[150px] ">
-      <img src={logo4.src} alt="" className="w-[250px] absolute ml-[1500px] mt-[500px]"/>
+    
+    <div className="items-center justify-center bg-center h-screen bg-fixed relative object-cover mt-5">
+      <img src={logo4.src} alt="" className="w-[250px] absolute  mt-[500px]"/>
       <h1 className="text-bold text-[85px] text-center">บริการต่างๆ</h1>
     <div className="flex justify-center">
     
@@ -44,7 +46,7 @@ function services() {
         {
         Data.map (({id,image,title,desc}) => {
           return (
-            <div key={id} className="group group/item singleJob w-[250px] p-[20px]  bg-gray-400/20 rounded-[10px] hover:bg-gray-500/20 shadow-lg hover:shadow-lg hover:text-white ">
+            <div key={id} className="group group/item singleJob w-[250px] p-[20px]  bg-grey-400/20 rounded-[10px] hover:bg-gray-500/20 shadow-lg hover:shadow-lg  ">
               
           <span className="flex justify-between items-center gap-4 ">
           <img src={image.src} alt="" className="w-[25%] flex items-center m-2"/>
@@ -60,10 +62,11 @@ function services() {
            {desc}
           </p>
 
-          <button className="rounded-[10px] border-[2px] block p-[10px] w-full text-[14px] font-semibold hover:bg-white hover:text-black bg-slate-600">
-            Download
+          <button className="rounded-[10px] border-[2px]  p-[10px] w-full  text-[14px] font-semibold hover:bg-white hover:text-black bg-custom-blue2">
+            Download 
           </button>
         </div>
+      
           )
         })}
       </div>

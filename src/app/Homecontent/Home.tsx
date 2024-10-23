@@ -8,7 +8,7 @@ export default function HomeContent() {
   return (
     
 <div>
-      <section className="scroll-smooth py-[76px]">
+      <section className="scroll-smooth ">
         <div className="video-container "><video
           src="https://videos.pexels.com/video-files/4391550/4391550-uhd_2560_1440_25fps.mp4"
           autoPlay loop
@@ -35,7 +35,7 @@ export default function HomeContent() {
               reprehenderit nulla quia a numquam!
             </p>
             <button className="px-3 py-2 text-[16px] text-black bg-stone-400  mx-5 shadow-2xl rounded-full hover:scale-110 duration-150">
-            Learn More
+            Learn More 
           </button>
           </div>
 
@@ -76,16 +76,13 @@ export default function HomeContent() {
       <section className="py-20">
     <div className=" items-center  w-screen custom-img2  bg-center flex relative object-cover py-10 ">
       
-        <img src={logo2.src} alt="" className="line-img w-[400px] absolute ml-[1400px]" />
+        <img src={logo2.src} alt="" className="line-img w-[400px] absolute ml-[1000px]" />
         <div className="justify-end pr-[280px] w-full py-40 gap-20 flex relative overflow-hidden">
           <div className="border-white bg-gray-400/20 shadow-2xl w-[500px] h-auto p-5">
             <div className="text-2xl  text-black font-content text-start p-10">
               <h1 className="font-extrabold">Content</h1>
               <p className="flex justify-center text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                suscipit, nobis voluptas veritatis inventore at eos. Quidem
-                neque tenetur quisquam nemo facilis labore blanditiis, sed
-                dolorem, reprehenderit nulla quia a numquam!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet exercitationem perspiciatis nesciunt corrupti corporis quaerat rem nostrum sint consequatur assumenda?
               </p>
             </div>
             <button className="px-5 flex py-4 gap-2 bg-stone-200  mx-5 mb-5 shadow-2xl rounded-sm hover:scale-110 duration-150 text-[16px]">

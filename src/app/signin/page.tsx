@@ -7,8 +7,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function SignIn() {
   return (
-    <section className="flex justify-center left-[500px] py-[120px] mb-0 overflow-visible fixed">
-      <div className=" object-none h-auto w-96 mb-[450px]">
+    <section className="flex justify-center mx-auto overflow-visible relative">
+      <div className="h-auto w-96">
         <video
           src="https://videos.pexels.com/video-files/6115070/6115070-sd_506_960_25fps.mp4"
           autoPlay

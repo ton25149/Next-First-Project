@@ -7,7 +7,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 function Header() {
   return (
-    <nav className="fixed font-bold top-0 w-full z-10 text-xl shadow-lg bg-white">
+    <nav className="fixed font-bold top-0 w-full z-10 text-xl shadow-lg bg-white relative">
       <div className="flex items-center max-w-[1240] p-4 ">
         <Link
           href="/"
@@ -72,6 +72,7 @@ onClick={() => {
               </div>
               <div className="hover:bg-gray-300 duration-150">
                 <Link href="/lang">TH</Link>
+                
               </div>
             </div>
           </div>
