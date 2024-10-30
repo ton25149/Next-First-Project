@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 @import "tailwindcss/base";
 
@@ -7,94 +6,107 @@
 
 @import "tailwindcss/utilities";
 
-
-
-@keyframes appear{
-    from{
-        opacity:  1;
-        scale: 1;
-    }
-    to{
-        opacity: 0.5;
-        scale: 0.1; 
-    }
- }
+@keyframes appear {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 0.5;
+    scale: 0.1;
+  }
+}
 
 html {
-    scroll-behavior: smooth;
-    font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .custom-img {
-    margin-top: 1cm;
-    width: screen-width;
-    background-image: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    
-    
+  margin-top: 1cm;
+  width: screen-width;
+  background-image: url("https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 .custom-img2 {
-    background-image: url('https://line.me/static/a8a76dfcb3634c0cc8ab318411a5ed6d/03979/2dfcd6684c8f541e18d888149e53bfae.png');
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: 10%;
+  background-image: url("https://line.me/static/a8a76dfcb3634c0cc8ab318411a5ed6d/03979/2dfcd6684c8f541e18d888149e53bfae.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 10%;
 }
-
 
 .custom-img3 {
-    background-image:url('https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/650c0406ebc263099fd19bf2_What%20is%20Discord.png') ;
+  background-image: url("https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/650c0406ebc263099fd19bf2_What%20is%20Discord.png");
   background-repeat: no-repeat;
-   background-size: 40%;
-   background-position: 90%;
-    
+  background-size: 40%;
+  background-position: 90%;
 }
 .custom-img4 {
-    background-image:url(/src/app/logos/linesticker.png) ;
-    background-repeat: no-repeat;
-   background-size: 100%;
-   z-index: -1;
-   
-   
-    
+  background-image: url(/src/app/logos/linesticker.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
 }
 .line-img {
-    
-   background-position: 80%;
-    
+  background-position: 80%;
 }
 .video-container {
-    height: 1000px;
-    position: absolute;
-    animation-play-state: running;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-   object-fit: cover;
-  animation: appear linear ;
+  height: 1000px;
+  position: absolute;
+  animation-play-state: running;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  animation: appear linear;
   animation-timeline: scroll();
   animation-timing-function: linear;
-  
-
 }
-.userIcon{
-    position : relative ;
-    left : 45% ;
-    margin-bottom: 50px;
+.userIcon {
+  position: relative;
+  left: 45%;
+  margin-bottom: 50px;
 }
 .signInButton {
-    left : 20% ;
-    position : relative ;
+  left: 20%;
+  position: relative;
 }
-.textAbouts{
-    width : 50%;
+.textAbouts {
+  width: 30%;
 }
-.all-img{
-    width: 40%;
+.all-img {
+  width: 40%;
+  z-index: -1;
+  height: 80%;
+  top: 120%;
+  left: 0%;
+  transform: translateY(-50%);
+  
+}
+
+.about-img2 {
+  width: 20%;
+  z-index: -1;
+  height: 60%;
+  top: 120%;
+  padding-left: 0%;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+
+.about-img3 {
+  width: 20%;
+  z-index: -1;
+  height: 60%;
+  top: 120%;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+
+.about-img4 {
+    width: 20%;
+  height: 50%;
+  top: 120%;
     z-index: -1;
-    height: 80%;
-    top: 120%;
-    left: 0%;
-    transform: translateY(-50%);
-   object-fit: cover;
+  transform: translateY(-50%);
+ object-fit: cover;
 }
-
-
