@@ -44,7 +44,7 @@ function services() {
       <div className="jobContainer flex gap-10 justify-center flex-wrap items-center py-10 ">
         
         {
-        Data.map (({id,image,title,desc}) => {
+        Data.map ( ({id,image,title,desc}) => {
           return (
             <div key={id} className="group group/item singleJob w-[250px] p-[20px]  bg-grey-400/20 rounded-[10px] hover:bg-gray-500/20 shadow-lg hover:shadow-lg  ">
               
