@@ -1,6 +1,6 @@
 "use client";
 import { FaAngleRight } from "react-icons/fa6";
-import { Carousel } from "@material-tailwind/react";
+
 import { useState } from "react";
 
 export default function Abouts() {
@@ -106,19 +106,28 @@ export default function Abouts() {
 
       
       <section className="">
+
+
+    <div className="textBox absolute  mt-[150px] ml-[150px] p-8 shadow-xl  rounded-2xl bg-white w-1/2">
+        <h1 className="font-bold text-start text-[22px] h-auto">
+            Lorem ipsum dolor sit amet.
+        </h1>
+        <p className="text-start pt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid explicabo beatae sunt consectetur architecto cumque tenetur, amet, sed temporibus quaerat rem ipsa, itaque quidem recusandae odit similique molestias praesentium dolorem nostrum obcaecati nisi suscipit? Nesciunt cumque harum fugiat impedit? Inventore labore saepe repellat ea at facilis aperiam illum optio.</p>
+
+    </div>
        
         {/* Carousel */}
-        <div className="relative w-full max-w-xl mx-auto mt-[150px] left-[180px]">
-          <div className="overflow-hidden relative rounded-xl h-80">
+        <div className="relative w-full max-w-xl mx-auto mt-[150px] left-[180px] ">
+          <div className="overflow-hidden relative rounded-xl h-80 ">
             {/* Display only the active slide */}
             <div
               key={slides[activeIndex].id}
-              className="flex w-full items-center p-5 bg-white rounded-xl shadow-lg"
+              className="flex w-full items-center p-5 bg-white rounded-xl shadow-lg duration-150"
             >
               <img
                 src={slides[activeIndex].img}
                 alt={`carousel-slide-${slides[activeIndex].id}`}
-                className="w-1/2 object-cover rounded-lg"
+                className="w-1/2 object-cover rounded-lg duration-150"
               />
               <div className="w-1/2 text-left space-y-4 pl-5">
                 <h3 className="text-xl font-bold text-custom-grey">{slides[activeIndex].title}</h3>
@@ -136,16 +145,16 @@ export default function Abouts() {
           </button>
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-1 hover:bg-opacity-75 transition"
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-1 hover:bg-opacity-75 transition duration-150"
           >
             &#8594;
           </button>
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 duration-150">
             {slides.map((_, id) => (
               <span
                 key={id}
                 onClick={() => setActiveIndex(id)}
-                className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
+                className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-150 ${
                   activeIndex === id ? "bg-black w-6" : "bg-white/50 w-3"
                 }`}
               />
