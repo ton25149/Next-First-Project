@@ -110,3 +110,67 @@ html {
   transform: translateY(-50%);
  object-fit: cover;
 }
+
+/* Keyframes สำหรับการเลื่อนจากขวาไปซ้าย */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1; /* ค้างไว้ตรงกลาง */
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1; /* ค้างไว้ตรงกลาง */
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+ 
+}
+
+/* Keyframes สำหรับการเลื่อนจากซ้ายไปขวา */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1; /* ค้างไว้ตรงกลาง */
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1; /* ค้างไว้ตรงกลาง */
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+
+
+
+/* กำหนดให้ carousel ใช้ animation */
+.carousel-slide {
+  animation: slideInFromRight  4s ease-in-out;
+}
+
+.carousel-slide-left {
+  animation: slideInFromLeft 4s ease-in-out;
+}
+
+
+

@@ -1,11 +1,15 @@
 "use client";
+
+import { useEffect } from "react";
+import { useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 
-import { useState } from "react";
 
 export default function Abouts() {
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [direction, setDirection] = useState("right");
+  const [isPaused, setIsPaused] = useState(false);
 
   // ข้อมูลแต่ละหน้า
   const slides = [
@@ -14,7 +18,7 @@ export default function Abouts() {
       img: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80",
       title: "Our History",
       des:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum.",
     },
     {
       id:2,
@@ -33,17 +37,38 @@ export default function Abouts() {
   ];
 
   const nextSlide = () => {
+    setDirection("right");
     setActiveIndex((prev) => (prev + 1) % slides.length);
+    setIsPaused(true); 
   };
 
   const prevSlide = () => {
+    setDirection("left");
     setActiveIndex((prev) => (prev - 1 + slides.length) % slides.length);
+    setIsPaused(true); 
   };
 
+  useEffect(() => {
+    // ถ้าไม่ได้หยุดการเปลี่ยนอัตโนมัติ ให้ตั้ง Interval
+    if (!isPaused) {
+      const interval = setInterval(() => {
+        setDirection("right");
+        setActiveIndex((prev) => (prev + 1) % slides.length);
+      }, 3800); // เวลาเปลี่ยนอัตโนมัติ
 
+      return () => clearInterval(interval); // ล้าง interval เมื่อ component ถูกทำลาย
+    }
 
-  return (
-    <section className="mt-10 absolute">
+    // ถ้าหยุดการเปลี่ยนอัตโนมัติ รีเซ็ตหลังเวลาที่กำหนด
+    const pauseTimeout = setTimeout(() => {
+      setIsPaused(false); // กลับมาทำงานอัตโนมัติ
+    }, 10);
+
+    return () => clearTimeout(pauseTimeout); // ล้าง timeout เมื่อ component ถูกทำลาย
+  }, [isPaused, activeIndex]);
+  
+ return (
+     <section className="mt-10 absolute">
         <section>
         <a
           href="/"
@@ -102,7 +127,7 @@ export default function Abouts() {
 
        
         
-        <section >
+        <section>
 
       
       <section className="">
@@ -117,53 +142,57 @@ export default function Abouts() {
     </div>
        
         {/* Carousel */}
-        <div className="relative w-full max-w-xl mx-auto mt-[150px] left-[180px] ">
-          <div className="overflow-hidden relative rounded-xl h-80 ">
-            {/* Display only the active slide */}
-            <div
-              key={slides[activeIndex].id}
-              className="flex w-full items-center p-5 bg-white rounded-xl shadow-lg duration-150"
-            >
-              <img
-                src={slides[activeIndex].img}
-                alt={`carousel-slide-${slides[activeIndex].id}`}
-                className="w-1/2 object-cover rounded-lg duration-150"
-              />
-              <div className="w-1/2 text-left space-y-4 pl-5">
-                <h3 className="text-xl font-bold text-custom-grey">{slides[activeIndex].title}</h3>
-                <p className="text-gray-700">{slides[activeIndex].des}</p>
-              </div>
-            </div>
-          </div>
+        <div className="relative w-full max-w-[565px] mx-auto mt-[150px] left-[180px]">
+  <div className="overflow-hidden relative rounded-xl h-auto">
+    {/* Display only the active slide */}
+    <div
+      key={slides[activeIndex].id}
+      className={`flex w-full h-[225px] items-center p-5 bg-white rounded-xl shadow-lg ${
+        direction === "right" ? "carousel-slide" : "carousel-slide-left"
+      }`}>
+        
+      <img
+        src={slides[activeIndex].img}
+        alt={`carousel-slide-${slides[activeIndex].id}`}
+        className="w-[220px] h-[145px] object-cover rounded-lg"
+      />
+      <div className="text-left top-1 w-2/3 space-y-2 p-3">
+        <h3 className="text-xl font-bold text-custom-grey">
+          {slides[activeIndex].title}
+        </h3>
+        <p className="text-gray-700">{slides[activeIndex].des}</p>
+      </div>
+    </div>
+  </div>
 
   {/* Carousel Controls */}
   <button
-            onClick={prevSlide}
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-1 hover:bg-opacity-75 transition"
-          >
-            &#8592;
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-1 hover:bg-opacity-75 transition duration-150"
-          >
-            &#8594;
-          </button>
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 duration-150">
-            {slides.map((_, id) => (
-              <span
-                key={id}
-                onClick={() => setActiveIndex(id)}
-                className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-150 ${
-                  activeIndex === id ? "bg-black w-6" : "bg-white/50 w-3"
-                }`}
-              />
-            ))}
-          </div>
+    onClick={prevSlide}
+    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-1 hover:bg-opacity-75 transition"
+  >
+    &#8592;
+  </button>
+  <button
+    onClick={nextSlide}
+    className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl bg-gray-800 bg-opacity-50 rounded-full p-1 hover:bg-opacity-75 transition"
+  >
+    &#8594;
+  </button>
+  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+    {slides.map((slide) => (
+      <span
+        key={slide.id}
+        onClick={() => setActiveIndex(slide.id - 1)}
+        className={`w-3 h-3 rounded-full cursor-pointer transition ${
+          activeIndex === slide.id - 1 ? "bg-black w-6" : "bg-white/50 w-3"
+        }`}
+      />
+    ))}
+  </div>
 </div>
-
       </section>
     </section>
+    
 
 
 
@@ -190,6 +219,7 @@ export default function Abouts() {
           className="all-img z-0 rounded-xl "
         />
       </section>
-    </section>
+      </section>
+    
   );
 }
