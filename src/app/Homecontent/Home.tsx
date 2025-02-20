@@ -76,7 +76,7 @@ export default function HomeContent() {
       <section className="py-20">
     <div className=" items-center  w-screen custom-img2  bg-center flex relative object-cover py-10 ">
       
-        <img src={logo2.src} alt="" className="line-img w-[400px] absolute ml-[1000px]" />
+        <img src={logo2.src} alt="" className="line-img w-[400px] absolute ml-[900px]" />
         <div className="justify-end pr-[280px] w-full py-40 gap-20 flex relative overflow-hidden">
           <div className="border-white bg-gray-400/20 shadow-2xl w-[500px] h-auto p-5">
             <div className="text-2xl  text-black font-content text-start p-10">

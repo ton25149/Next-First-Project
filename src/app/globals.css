@@ -47,7 +47,7 @@ html {
   z-index: -1;
 }
 .line-img {
-  background-position: 80%;
+  background-position: 70%;
 }
 .video-container {
   height: 1000px;
@@ -79,9 +79,18 @@ html {
   height: 80%;
   top: 120%;
   left: 0%;
-  transform: translateY(-50%);
+  transform: translateY(-350%);
   
 }
+
+.about-img {
+  width: 30%;
+  z-index: -1;
+  height: 70%;
+  padding-left: 0%;
+  object-fit: cover;
+}
+
 
 .about-img2 {
   width: 20%;
@@ -89,7 +98,7 @@ html {
   height: 60%;
   top: 120%;
   padding-left: 0%;
-  transform: translateY(-50%);
+  transform: translateY(-185%);
   object-fit: cover;
 }
 
@@ -98,17 +107,26 @@ html {
   z-index: -1;
   height: 60%;
   top: 120%;
-  transform: translateY(-50%);
+  transform: translateY(-200%);
   object-fit: cover;
 }
 
 .about-img4 {
-    width: 20%;
-  height: 50%;
+  width: 20%;
+  z-index: -1;
+  height: 60%;
   top: 120%;
-    z-index: -1;
-  transform: translateY(-50%);
- object-fit: cover;
+  transform: translateY(-400%);
+  object-fit: cover;  
+    
+}
+
+.carousel {
+  transform: translateY(-350%);
+}
+
+.paragraph{
+  transform: translateY(-120%);
 }
 
 /* Keyframes สำหรับการเลื่อนจากขวาไปซ้าย */
