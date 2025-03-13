@@ -30,7 +30,7 @@ function Header() {
             Abouts
           </Link>
           <Link
-            href="/abouts"
+            href="/contacts"
             className="text-black rounded-lg p-2 hover:shadow-2xl focus:underline active:bg-stone-300 hover:scale-125 duration-150"
           >
             Contact

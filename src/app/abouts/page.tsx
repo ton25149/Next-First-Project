@@ -8,7 +8,9 @@ export default function Abouts() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [direction, setDirection] = useState("right");
   const [isPaused, setIsPaused] = useState(false);
-
+  
+  
+  
   // ข้อมูลแต่ละหน้า
   const slides = [
     {
@@ -76,48 +78,52 @@ export default function Abouts() {
       </section>
       <section className="mt-[210px] relative text-center">
         <div className="space-y-5 z-1 ">
-          <h1 className="text-[22px] text-custom-grey z-1">About Us</h1>
-          <h2 className="text-bold text-[40px] text-custom-grey ">
+          <h1 className="text-[16px] text-custom-grey z-1">Our Mission</h1>
+          <h2 className="text-bold text-[40px] text-slate-700">
             Lorem ipsum dolor sit amet.
           </h2>
 
-          <p className="textAbouts text-[16px] text-custom-grey mx-auto rounded-2xl shadow-2xl p-7 z-1">
+          <p className="mx-auto text-center text-[16px] text-custom-grey w-[50%]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quis
             aliquam eius vel temporibus asperiores quam maxime illo
-            voluptatibus, enim officiis quae, atque non, quos error animi quo a
-            consequuntur?
+            
           </p>
 
-          <div id="left-right-img" className=" z-0 static">
-            <img
-              src="https://images.pexels.com/photos/4049459/pexels-photo-4049459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
-              className="about-img3 object-contain rounded-lg ml-[20px]"
-            />
+          <div id="left-right-img" className="relative w-full">
+  {/* กลุ่มรูปด้านซ้าย */}
+  <div className="absolute left-5 transform -translate-y-1/2 flex flex-col space-y-4 ">
+    <img
+      src="https://images.pexels.com/photos/4049459/pexels-photo-4049459.jpeg"
+      alt="Left Image 1"
+      className="object-cover rounded-lg w-[250px] h-[200px]"
+    />
+    <img
+      src="https://images.pexels.com/photos/5053740/pexels-photo-5053740.jpeg"
+      alt="Left Image 2"
+      className="object-cover rounded-lg w-[250px] h-[200px]"
+    />
+  </div>
 
-            <img
-              src="https://images.pexels.com/photos/5053740/pexels-photo-5053740.jpeg"
-              alt=""
-              className="about-img2 object-contain flex rounded-lg mt-2 ml-[50px]"
-            />
+  {/* กลุ่มรูปด้านขวา */}
+  <div className="absolute right-5 transform -translate-y-1/2 flex flex-col space-y-4">
+    <img
+      src="https://images.pexels.com/photos/6168/hands-woman-laptop-notebook.jpg"
+      alt="Right Image 1"
+      className="object-cover rounded-lg w-[250px] h-[200px] relative"
+    />
+    <img
+      src="https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg"
+      alt="Right Image 2"
+      className="object-cover rounded-lg w-[250px] h-[200px]"
+    />
+  </div>
+</div>
 
-            <img
-              src="https://images.pexels.com/photos/6168/hands-woman-laptop-notebook.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
-              className="about-img4 object-contain rounded-lg ml-[1150px] "
-            />
-
-            <img
-              src="https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
-              className="about-img4 z-0 rounded-lg ml-[1100px] relative mt-4"
-            />
-          </div>
         </div>
 
         <section>
-          <section className="carousel">
-            <div className="textBox absolute mt-[150px] ml-[150px] p-8 shadow-xl  rounded-2xl bg-white w-1/2">
+          <section className="carousel relative top-[300px] ">
+            <div className="textBox absolute ml-[150px] p-8 shadow-xl  rounded-2xl bg-white w-1/2 ">
               <h1 className="font-bold text-start text-[22px] h-auto">
                 Lorem ipsum dolor sit amet.
               </h1>
@@ -134,7 +140,7 @@ export default function Abouts() {
             </div>
 
             {/* Carousel */}
-            <div className="relative w-full max-w-[565px] mx-auto mt-[150px] left-[180px]">
+            <div className="relative w-full max-w-[565px] mx-auto left-[300px] top-[180px]">
               <div className="overflow-hidden relative rounded-xl h-auto">
                 {/* Display only the active slide */}
                 <div
@@ -189,7 +195,7 @@ export default function Abouts() {
           </section>
         </section>
 
-        <section className="paragraph justify-center items-center static">
+        <section className="paragraph  justify-center items-center mt-[1300px]">
           {/* Third Paragrahp */}
           <div className="mt-[200px]">
             <h1 className="text-[25px] text-center mx-auto font-extrabold text-custom-grey ">
@@ -204,7 +210,7 @@ export default function Abouts() {
 
             {/* ContentBox */}
 
-            <div className="flex justify-center space-x-5 ">
+            <div className="flex justify-center space-x-5 t-[200px]\">
 
               <div className="textBox mt-[50px] mb-[70px] shadow-xl rounded-2xl bg-white w-[250px] h-[250px]">
                 <img
@@ -248,17 +254,13 @@ export default function Abouts() {
           
         </section>
 
-        <div className="flex  items-center justify-center space-x-5 -mt-[600px] pb-10">
-          <img
-            src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg"
-            alt=""
-            className="about-img rounded-xl ml-5"
-          />
-          <div className=" w-1/2 text-custom-grey rounded-3xl shadow-2xl p-5 justify-center">
-            <h1 className="text-[26px] font-bold text-start ml-4">
+        <div className="space-x-5 -mt-[600px] pb-10">
+          
+          <div className=" w-1/2 p-5 ">
+            <h1 className="text-[26px] font-bold">
               Our Objective
             </h1>
-            <p className="text-start">
+            <p className="text-start text-custom-grey">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Necessitatibus cupiditate placeat quis. Explicabo earum
               praesentium illum sunt repellat quod esse strum, numquam quidem

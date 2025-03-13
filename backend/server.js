@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/user/list", async (req, res) => {
     const data = await prisma.user.findMany();
     res.send({data : data});
+    
 })
 
 app.listen(3000)
