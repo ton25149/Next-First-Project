@@ -32,7 +32,7 @@ desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum hivolupt
 ]
 
 
-function services() {
+function news() {
   return (
     
     <div className="items-center justify-center bg-center h-screen bg-fixed relative object-cover mt-5">
@@ -75,4 +75,4 @@ function services() {
   );
 }
 
-export default services;
+export default news;

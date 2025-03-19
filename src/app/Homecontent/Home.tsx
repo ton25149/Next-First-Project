@@ -16,19 +16,11 @@ export default function HomeContent() {
         ></video>
 
         </div>
-      <div className="justify-center items-center w-full py-60 gap-5 px-5 flex relative overflow-hidden">
+      <div className="w-full gap-5 px-5 overflow-hidden absolute">
         <div className="border-white bg-gray-500/20 shadow-2xl w-4/6 h-auto ">
           <div className="text-2xl  text-white font-content text-start p-8">
             <h1 className="font-extrabold ">Content</h1>
             <p className="flex justify-center text-lg ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              suscipit, nobis voluptas veritatis inventore at eos. Quidem neque
-              tenetur quisquam nemo facilis labore blanditiis, sed dolorem,
-              reprehenderit nulla quia a numquam!
-            </p>
-
-            <h1 className="font-extrabold">Content</h1>
-            <p className="flex justify-center text-lg mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               suscipit, nobis voluptas veritatis inventore at eos. Quidem neque
               tenetur quisquam nemo facilis labore blanditiis, sed dolorem,
@@ -47,7 +39,7 @@ export default function HomeContent() {
         
 
       <section className="py-20">
-    <div className=" items-center  w-screen custom-img3  bg-center flex relative object-cover py-10 ">
+    <div className=" items-center  w-screen custom-img3 object-cover py-10 ">
     <img src={logo1.src} alt="" className="discord-img absolute ml-[40px] w-[550px] " />
         
         <div className="pl-[350px]  w-full py-40 gap-20 flex relative overflow-hidden">
@@ -74,7 +66,7 @@ export default function HomeContent() {
 
 
       <section className="py-20">
-    <div className=" items-center  w-screen custom-img2  bg-center flex relative object-cover py-10 ">
+    <div className=" items-center  w-screen custom-img2  bg-center relative object-cover py-10 ">
       
         <img src={logo2.src} alt="" className="line-img w-[400px] absolute ml-[900px]" />
         <div className="justify-end pr-[280px] w-full py-40 gap-20 flex relative overflow-hidden">
