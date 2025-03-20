@@ -70,9 +70,7 @@ html {
   left: 20%;
   position: relative;
 }
-.textAbouts {
-  width: 30%;
-}
+
 .all-img {
   width: 40%;
   z-index: -1;
@@ -121,9 +119,7 @@ html {
     
 }
 
-.carousel {
-  transform: translateY(-350%);
-}
+
 
 .paragraph{
   transform: translateY(-120%);
