@@ -32,13 +32,14 @@ function Contacts() {
   }, []);
 
   return (
-    <section className="mt-10 relative min-h-screen pb-[100px]">
+    <section className="">
       <Head>
         <title>Contact</title>
         <meta name="description" content="Contact Page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="absolute">
+
+      <div className="mt-10">
         <a
           href="/"
           className="justify-start absolute flex ml-40 text-slate-400 hover:text-custom-blue"

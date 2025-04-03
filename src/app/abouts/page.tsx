@@ -6,6 +6,8 @@ import { useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa";
 
+
+
 export default function Abouts() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [direction, setDirection] = useState("right");
@@ -70,8 +72,10 @@ export default function Abouts() {
   }, [isPaused, activeIndex]);
 
   return (
-    <section className="mt-10 flex">
+    <section className="mt-10 flex background">
+      
       <section>
+        
         <a
           href="/"
           className="justify-start absolute flex ml-40 text-slate-400 hover:text-custom-blue"
@@ -123,7 +127,7 @@ export default function Abouts() {
             </div>
           </div>
           {/* Button Scroll */}
-          <div className="flex flex-col items-center">
+          <div className={` flex flex-col items-center`}>
             <button
               onClick={handleScroll}
               className="flex flex-col items-center text-gray-400 hover:text-gray-600 transition-all"
@@ -136,8 +140,11 @@ export default function Abouts() {
 
           {/* carousel */}
         <section>
-          <section ref={sectionRef} className="carousel relative top-[300px] ">
-            <div className="textBox absolute ml-[150px] p-8 shadow-xl  rounded-2xl bg-white w-1/2 ">
+          <section ref={sectionRef} className=" carousel relative top-[300px] ">
+          <div className="fixed top-0 left-0 w-[400px] h-full z-[-1]">
+      
+    </div>
+            <div className=" textBox absolute ml-[150px] p-8 shadow-xl  rounded-2xl bg-white w-1/2 ">
               <h1 className="font-bold text-start text-[22px] h-auto">
                 Lorem ipsum dolor sit amet.
               </h1>
@@ -209,11 +216,11 @@ export default function Abouts() {
           </section>
         </section>
 
-        <section className="paragraph mx-auto justify-center items-center mt-[1300px]">
+        <section className="paragraph mx-auto justify-center items-center mt-[1300px] ">
           {/* Third Paragrahp */}
           <div className="mt-[200px]">
-            <h1 className="text-[35px] text-center font-extrabold text-slate-700">
-              What we do
+            <h1 className="text-[35px] text-center font-extrabold text-slate-700 ">
+              What we do 
             </h1>
             <p className="w-1/2 text-center mx-auto text-custom-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
@@ -266,10 +273,10 @@ export default function Abouts() {
 
 
           {/* Last Context */}
-        <div className="container mx-auto -mt-[600px] pb-[150px]">
+        <div className="container mx-auto -mt-[600px] pb-[150px] max-w-screen-xl ">
           <h1 className="text-center text-4xl font-bold text-slate-700">Our History</h1>
 
-          <div className="max-w-full mx-auto mt-10">
+          <div className="mx-auto mt-10">
             <h2 className="text-2xl font-bold text-start text-slate-700">Struggle</h2>
             <p className="text-custom-grey italic text-start my-5">2010-2012</p>
             <p className="mt-3 text-custom-grey text-start">
@@ -312,6 +319,7 @@ export default function Abouts() {
               optio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Harum veniam sequi placeat tempora sed quia!
             </p>
+            
           </div>
         </div>
       </section>

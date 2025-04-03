@@ -7,16 +7,16 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 function Header() {
   return (
-    <nav className="font-bold top-0 w-full z-10 text-xl shadow-lg bg-white ">
-      <div className="flex items-center max-w-[1240] p-4 ">
+    <nav className="font-bold  top-0 w-full z-10 text-xl shadow-lg bg-white ">
+      <div className="flex  items-center max-w-[1240] p-4 ">
         <Link
           href="/"
-          className="text-black rounded-lg p-2 hover:shadow-2xl focus:underline active:bg-gray-400 ml-20 hover:scale-125 duration-150"
+          className="text-black rounded-lg p-2 hover:shadow-2xl focus:underline active:bg-gray-400 ml-20 hover:scale-125 duration-150 text-[16px]"
         >
           Home
         </Link>
 
-        <ul className="flex space-x-8  text-xl bg-opacity-95 m-auto">
+        <ul className="flex space-x-8  bg-opacity-95 m-auto text-[16px]">
           <Link
             href="/news"
             className=" text-black rounded-lg p-2 hover:shadow-2xl  focus:underline active:bg-stone-300 duration-150 hover:scale-125"
@@ -33,15 +33,15 @@ function Header() {
             href="/contacts"
             className="text-black rounded-lg p-2 hover:shadow-2xl focus:underline active:bg-stone-300 hover:scale-125 duration-150"
           >
-            Contact
+            Contact Us
           </Link>
-          <Link
+          {/* <Link
             href="/signin"
             className="text-black rounded-lg p-2 hover:shadow-2xl focus:underline active:bg-stone-300 hover:scale-125 duration-150"
           >
             Sign in
-          </Link>
-        </ul>
+          </Link> */}
+        </ul> 
 
         <ul
           id="dropdownButton"
@@ -56,7 +56,7 @@ onClick={() => {
 }}
 
         >
-          <div className="flex m-auto space-x-2 rounded-lg p-2 cursor-pointer">
+          <div className="flex m-auto space-x-2 rounded-lg p-2 cursor-pointer text-[18px]">
             <GrLanguage />
             <p className="relative bottom-1">EN</p>
             <IoMdArrowDropdown />
